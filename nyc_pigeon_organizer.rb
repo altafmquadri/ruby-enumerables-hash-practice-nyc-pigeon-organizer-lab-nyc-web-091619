@@ -27,11 +27,9 @@ def nyc_pigeon_organizer(data)
         !pigeon_list[value] ? pigeon_list[value] = {} : false
         !pigeon_list[value][color_gender_lives] ? pigeon_list[value][color_gender_lives] = [] : false
         pigeon_list[value][color_gender_lives].push(key.to_s)
-        binding.pry
       end
     end
   end
-  #binding.pry
   pigeon_list
 end
 
