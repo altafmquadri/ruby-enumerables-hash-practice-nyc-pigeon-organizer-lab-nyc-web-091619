@@ -26,6 +26,7 @@ def nyc_pigeon_organizer(data)
       values.each do |value|
         !pigeon_list[value] ? pigeon_list[value] = {} : false
         !pigeon_list[value][color_gender_lives] ? pigeon_list[value][color_gender_lives] = [] : false
+        pigeon_list[value][color_gender_lives].push(keys.to_s)
         binding.pry
       end
     end
